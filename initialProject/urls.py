@@ -19,6 +19,7 @@ from django.urls import path, include
 from rest_framework import routers
 
 # Routers provide an easy way of automatically determining the URL conf.
+from endpoints import migrations
 from endpoints.views import UserViewSet
 
 from endpoints.views import status
@@ -31,7 +32,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # rest_framework
     path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls')),
+
 
     # web
     path('status', status),

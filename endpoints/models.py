@@ -12,8 +12,6 @@ class Student(models.Model):
         return "{} {}".format(self.name, self.surname)
 
 
-
-
 # Modelo para crear un tópico
 
 class Topic(models.Model):
